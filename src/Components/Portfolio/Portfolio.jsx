@@ -28,13 +28,13 @@ export default function Portfolio() {
         <div className="container">
           <div className="row g-5">
             <h2
-              className={ fw-bolder text-center text-uppercase fs-1 ${Pstyle.title}}
+              className={`fw-bolder text-center text-uppercase fs-1 ${Pstyle.title}`}
             >
               portfolio component
             </h2>
             <div className="star d-flex gap-2 align-items-center justify-content-center mt-2 mb-3">
               <div className={Pstyle.icony}></div>
-              <i className={fa-solid fa-star}></i>
+              <i className={`fa-solid fa-star`}></i>
               <div className={Pstyle.icony}></div>
             </div>
 
@@ -42,7 +42,7 @@ export default function Portfolio() {
               return (
                 <div key={index} className="col-md-6 col-lg-4">
                   <div
-                    className={${Pstyle.image} position-relative}
+                    className={`${Pstyle.image} position-relative`}
                     onClick={() => handleClick(index)}
                     style={{ cursor: "pointer" }}
                   >
@@ -53,7 +53,7 @@ export default function Portfolio() {
                     />
                     {activeIndex === index && (
                       <div
-                        className={${Pstyle.layer} d-flex justify-content-center align-items-center position-absolute}
+                        className={`${Pstyle.layer} d-flex justify-content-center align-items-center position-absolute`}
                       >
                         <i className="fa-solid fa-plus fs-1  text-white"></i>
                       </div>
@@ -62,7 +62,6 @@ export default function Portfolio() {
                 </div>
               );
             })}
-            
           </div>
         </div>
       </section>
